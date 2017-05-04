@@ -18,11 +18,8 @@ for(var i=0; i<PRODUCT_COUNT; i++) {
 module.exports =  {
     saveData: function () {
       productDB.remove({}, function(err) {
-          if (err) {
-            console.log(err)
-          } else {
-            console.log('empty db')
-          }
+          if (err) console.log(err);
+          else console.log('Server Ready!');
         }
       );
         for(var i = 0; i< products.length; i++){
