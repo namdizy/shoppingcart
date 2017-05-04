@@ -1,15 +1,33 @@
 # shoppingcart
-A simple shopping cart app
-#to run this app
 
-Clone app
 
-install node modules using npm install
 
-start up mongo db on local machine
+#Introduction
 
-build the app using ng build
+This is a simple shopping cart app that uses mongodb to save and load product items.
 
-run server using node server.js
+#Author 
+
+Theodore Nnamdi Johnson-Kanu
+
+#
+ #Installation
+Clone repository or download to desktop
+
+Navigate to folder and run npm install to install dependencies
+
+start mongodb locally
+
+build the app using command ng build
+
+run server using commang node server.js
 
 navigate to http://localhost:3000
+
+#Lisence
+
+MIT license
+
+ 
+
+
