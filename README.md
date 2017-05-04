@@ -10,8 +10,8 @@ This is a simple shopping cart app that uses mongodb to save and load product it
 
 Theodore Nnamdi Johnson-Kanu
 
-#
- #Installation
+
+#Installation
 Clone repository or download to desktop
 
 Navigate to folder and run npm install to install dependencies
