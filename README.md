@@ -18,9 +18,9 @@ Navigate to folder and run npm install to install dependencies
 
 start mongodb locally
 
-build the app using command ng build
+build the app using the command ng build
 
-run server using commang node server.js
+run server using the command node server.js
 
 navigate to http://localhost:3000
 
