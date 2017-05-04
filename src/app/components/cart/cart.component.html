@@ -1,0 +1,22 @@
+
+<div class="sc-cart-content">
+  <md-card class="example-card">
+    <md-card-header>
+      <md-card-title><h3>Cart</h3></md-card-title>
+      <md-card-subtitle *ngIf="cart.length == 0">There are currently no Items in your cart!</md-card-subtitle>
+    </md-card-header>
+    <md-card-content *ngIf="cart.length > 0">
+      <md-list>
+        <md-list-item *ngFor="let c of cart"><p md-line>{{c.name}}  ${{c.price}}</p></md-list-item>
+      </md-list>
+    </md-card-content>
+    <md-card-actions>
+      <button md-button *ngIf="cart.length > 0" (click)="checkOut()">Check Out</button>
+      <button md-button routerLink="/products">Keep Shopping</button>
+    </md-card-actions>
+  </md-card>
+
+</div>
+
+
+

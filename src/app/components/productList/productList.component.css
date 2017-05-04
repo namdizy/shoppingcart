@@ -1,0 +1,9 @@
+.sc-productlist-list{
+  padding: 0 30%;
+}
+
+.sc-productlist-cart{
+  padding: 5%;
+  width: inherit;
+  float: left;
+}

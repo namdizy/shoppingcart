@@ -1,0 +1,22 @@
+<div class="sc-productlist-cart">
+  <button md-button routerLink="/cart">Go to Cart</button>
+</div>
+
+<div class="sc-productlist-list">
+    <md-card class="example-card" *ngFor='let product of productsList'  >
+      <md-card-header [routerLink]="['/product', product.id]">
+        <md-card-title>{{product.name}}</md-card-title>
+      </md-card-header >
+      <img [routerLink]="['/product', product.id]" md-card-image [src]=product.image>
+      <md-card-content [routerLink]="['/product', product.id]">
+        <p>price: $ {{product.price}}</p>
+        <p *ngIf="product.status ==='sold out'">SOLD OUT!</p>
+      </md-card-content>
+      <md-card-actions>
+        <button md-button *ngIf='product.status === "in list"' (click)="addToCart(product)">Add To Cart</button>
+        <button md-button *ngIf='product.status === "in cart"' (click)="removeFromCart(product)">Remove From Cart</button>
+      </md-card-actions>
+    </md-card>
+</div>
+
+

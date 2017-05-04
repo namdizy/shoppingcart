@@ -1,0 +1,21 @@
+<div class="sc-back">
+  <button md-raised-button routerLink="/products">Back</button>
+</div>
+
+<div class="details-content">
+  <md-card>
+    <md-card-header >
+      <md-card-title>{{product?.name}}</md-card-title>
+    </md-card-header>
+    <img md-card-image [src]=product?.image>
+    <md-card-content >
+      <p>price: $ {{product?.price}}</p>
+      <p>{{product?.description}}</p>
+      <p *ngIf="product?.status ==='sold out'">SOLD OUT!</p>
+    </md-card-content>
+    <md-card-actions>
+      <button md-button *ngIf='product?.status === "in list"' (click)="addToCart(product)">Add To Cart</button>
+      <button md-button *ngIf='product?.status === "in cart"' (click)="removeFromCart(product)">Remove From Cart</button>
+    </md-card-actions>
+  </md-card>
+</div>
